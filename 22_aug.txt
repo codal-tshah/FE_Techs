@@ -1,0 +1,3 @@
+22_aug 
+    - started learning basics FE techs by first understanding the behavipur of internet 
+        - hitting any websites it just hit the ip address and its getting from DNS 
