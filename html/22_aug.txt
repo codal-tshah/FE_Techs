@@ -1,0 +1,14 @@
+22_aug 
+    - started learning basics FE techs by first understanding the behavipur of internet 
+        - hitting any websites it just hit the ip address and its getting from DNS 
+    - tags leanred : <h1> , <p> , <li> , <ul> , <ol>
+    - attributes in html , ex : <ol type="A"> , here type is attribute which is adding extra information 
+    - Anchor tag : <a> 
+    - Inline vs Block elements 
+        - <a> and <img> tags are imline elements 
+    - div is a container and holds all html elemnts and its Block element 
+    - span is same as div tag but its inline element
+    - hr tag for addign the line 
+    - superscript and subscript : <sub>h2O</sub> and <sup>1st class</sup>
+    - semantic tags : use to make a meaningful tags and also SEO optimized 
+        - header , main , footer , nav , aside , section , article
