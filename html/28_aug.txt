@@ -1,0 +1,5 @@
+- learning html entites , starts with & ends with ;
+    - ex: to print '<' write &lt; '>' = &gt;
+    - ex : to print '&' =   &amp;
+     
+        
