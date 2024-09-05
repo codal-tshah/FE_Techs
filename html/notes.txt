@@ -12,3 +12,11 @@
     - superscript and subscript : <sub>h2O</sub> and <sup>1st class</sup>
     - semantic tags : use to make a meaningful tags and also SEO optimized 
         - header , main , footer , nav , aside , section , article
+
+5_sep:
+    - forms :
+        - different input types such as : text , password , number , time , color 
+        - in forms we use : label , action , input , placeholder 
+        - inside form element any button behaves like a submit button
+        - button types in forms are : button , submit , reset
+        - checkbox , radio , select , range , text area
