@@ -7,3 +7,14 @@
 
 23_sep 
 - completed assignment for css part1
+
+24_sep 
+- started css part 2 
+- universal selector
+- ID selector 
+- class selector 
+- Descendent selector
+- sibling selector 
+- child combinator
+- Attribute selector
+- comparison : inline style > id > class > element     
