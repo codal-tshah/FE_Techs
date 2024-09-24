@@ -4,3 +4,6 @@
 19_sep 
 - started from Font weight property of CSS
     - font-weight, font-size , line-height , text-decoration , text-align , letter-spacing,  font-family
+
+23_sep 
+- completed assignment for css part1
