@@ -7,3 +7,21 @@
 
 23_sep 
 - completed assignment for css part1
+
+24_sep 
+- started css part 2 
+- universal selector
+- ID selector 
+- class selector 
+- Descendent selector
+- sibling selector 
+- child combinator
+- Attribute selector
+- comparison : inline style > id > class > element  
+
+25_sep :
+- card hover effect 
+- position property
+- in relative position it store space of its old state but not in absolute : "position:absolute"
+- position - fixed stay element even on scroll
+- completed CSS part 4
