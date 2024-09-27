@@ -1,0 +1,13 @@
+#outer{
+    background-color: black;
+    border: 2px solid red;
+    height: 800px;
+    width: 800px;
+    display: grid;
+}
+.inside{
+    background-color: lightpink;
+    border: 2px solid rgb(140, 150, 233);
+    height: 100px;
+    width: 100px;
+}
