@@ -29,3 +29,4 @@
 26_sep :
 - completed assignment 5 
 - learn related flex box 
+- flex-wrap , flex-direction , justify-content , align-items , align-content , 
