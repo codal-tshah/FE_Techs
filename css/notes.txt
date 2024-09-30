@@ -25,3 +25,8 @@
 - in relative position it store space of its old state but not in absolute : "position:absolute"
 - position - fixed stay element even on scroll
 - completed CSS part 4
+
+26_sep :
+- completed assignment 5 
+- learn related flex box 
+- flex-wrap , flex-direction , justify-content , align-items , align-content , 
