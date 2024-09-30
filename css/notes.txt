@@ -35,3 +35,8 @@
 - CSS part 6 
 - display : grid 
 - grid can be used on mostly tabular form such as if we using rows and columns together and flex can be used if we using 1d (row or columns)
+
+30_sep:
+- CSS part 6 assignment solved 
+- solved 2 questions
+- watchout simple mini css project 
