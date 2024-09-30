@@ -30,3 +30,8 @@
 - completed assignment 5 
 - learn related flex box 
 - flex-wrap , flex-direction , justify-content , align-items , align-content , 
+
+27_sep :
+- CSS part 6 
+- display : grid 
+- grid can be used on mostly tabular form such as if we using rows and columns together and flex can be used if we using 1d (row or columns)
