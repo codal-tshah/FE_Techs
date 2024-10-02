@@ -7,8 +7,9 @@
 .main {
     display: grid;
     background-color: #000;
-    grid-template-rows: 50px 1fr 72px; /* Nav-bar height at top, main-content fills the rest, musicplayer at the bottom */
+    grid-template-rows: 60px 1fr 72px; /* Nav-bar height at top, main-content fills the rest, musicplayer at the bottom */
     grid-template-columns: 340px 1fr; /* Sidebar width on the left, main-content takes the rest */
+    column-gap:5px ;
     height: 100vh;
     grid-template-areas:
         "nav-bar nav-bar"
@@ -34,17 +35,14 @@
     grid-area: sidebar; /* Assign this section to the sidebar area */
     background-color: #484646;
     padding: 20px;
-    margin: 5px;
-    border-radius: 1rem;
+    border-radius: 10px;
 }
 .main-content {
     grid-area: main-content;
     background-color: #484646;
-    border-radius: 1rem;
-    margin: 5px;
-    padding: 20px;
-    overflow-y: auto; /* Allows the content inside to scroll if needed */
-    height: calc(100vh - 72px - 55px); /* Adjust height based on the nav-bar and musicplayer */
+    border-radius: 10px;
+    overflow-y: auto; 
+    height: calc(100vh - 72px - 60px ); /* Adjust height based on nav-bar, music player, and margins */
 }
 
 .musicplayer {
@@ -55,7 +53,6 @@
     width: 100%;
     height: 72px;
     background-color: #000;
-    /* z-index: 1000; Keep the music player above other content */
 }
 
 /* Search box styles */
