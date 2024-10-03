@@ -7,8 +7,9 @@
 .main {
     display: grid;
     background-color: #000;
-    grid-template-rows: 50px 1fr 72px; /* Nav-bar height at top, main-content fills the rest, musicplayer at the bottom */
+    grid-template-rows: 60px 1fr 72px; /* Nav-bar height at top, main-content fills the rest, musicplayer at the bottom */
     grid-template-columns: 340px 1fr; /* Sidebar width on the left, main-content takes the rest */
+    column-gap:5px ;
     height: 100vh;
     grid-template-areas:
         "nav-bar nav-bar"
@@ -19,7 +20,7 @@
 .nav-bar {
     grid-area: nav-bar; /* Assign this section to the nav-bar area */
     display: grid;
-    grid-template-columns: 10% 70% 20%; 
+    grid-template-columns: 10% 60% 30%; 
     align-items: center;
     background-color: #000;
     height: 55px;
@@ -28,23 +29,22 @@
     padding: 0 10px;
     position: fixed;
     top: 0;
-    /* z-index: 1000; Keeps the nav-bar on top */
+    z-index: 1000; 
 }
 .sidebar {
     grid-area: sidebar; /* Assign this section to the sidebar area */
     background-color: #484646;
-    padding: 20px;
-    margin: 5px;
-    border-radius: 1rem;
+    padding: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
 }
 .main-content {
     grid-area: main-content;
     background-color: #484646;
-    border-radius: 1rem;
-    margin: 5px;
-    padding: 20px;
-    overflow-y: auto; /* Allows the content inside to scroll if needed */
-    height: calc(100vh - 72px - 55px); /* Adjust height based on the nav-bar and musicplayer */
+    border-radius: 10px;
+    overflow-y: auto; 
+    height: calc(100vh - 72px - 60px ); /* Adjust height based on nav-bar, music player, and margins */
 }
 
 .musicplayer {
@@ -55,14 +55,21 @@
     width: 100%;
     height: 72px;
     background-color: #000;
-    /* z-index: 1000; Keep the music player above other content */
 }
 
+/* Other elements as in your original code */
+.logospotify i{
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    width: 35px;
+    margin-left: 5px;
+}
 /* Search box styles */
 .searchbox {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     background-color: #484646;
     border-radius: 30px;
     height: 40px;
@@ -70,44 +77,9 @@
     width: 60%;
     opacity: 0.7;
 }
-
 .searchbox:hover {
     opacity: 1;
 }
-
-/* Other elements as in your original code */
-.logospotify {
-    line-height: 3px;
-    text-align: center;
-    /* padding: 5px; */
-    font-size: 30px;
-    width: 45px;
-    margin-left: 5px;
-    gap: 8px;
-}
-
-.profile {
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-    align-items: center;
-    margin: 3px;
-}
-
-.profile img {
-    height: 35px;
-    width: 35px;
-    margin-right: 20px;
-    margin-top: 2px;
-    border-radius: 50%;
-}
-
-.profile i {
-    font-size: 23px;
-    color: white;
-    margin-top: 2px;
-}
-
 .searchinput input {
     width: 400px;
     background-color: transparent;
@@ -117,20 +89,53 @@
     outline: none;
     padding: 5px;
 }
-
 .searchinput input::placeholder {
     color: #ccc;
     font-size: 16px;
+}
+.searchlogo i{
+    margin-top: 5px;
+    width: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-button{
+    display: flex;
+    display: inline-block;
+}
+.profile {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    margin: 2px;
+}
+
+.profile img {
+    height: 35px;
+    width: 35px;
+    margin-right: 30px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+}
+
+.profile i {
+    font-size: 23px;
+    color: white;
+    margin-top: 2px;
 }
 
 .library{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 0px;
+    margin-left: 15px;
 
 }
 .lib-options {
+    
     opacity: 0.7;
     font-size: 23px;
     
@@ -168,15 +173,16 @@
     font-size: 13px;
     justify-content: space-between;
     line-height: 30px; /* Reduced line height */
-    margin-top: 5px;
+    padding: 5px;
+    margin-top: 17px;
     font-weight: 700;
 }
 
 .selection-list div {
     align-items: center;
-    background-color: #1F1F1F;
+    background-color: #333;
     border-radius: 20px;
-    padding: 0px 8px; /* Very slim padding (0px for top and bottom, 8px for sides) */
+    padding: 3px 10px; /* Very slim padding (0px for top and bottom, 8px for sides) */
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -184,13 +190,207 @@
 }
 
 .selection-list div:hover {
-    background-color: #333; /* Darken background on hover */
+    background-color: #1F1F1F; /* Darken background on hover */
+}
+.sticky-nav{
+    position: sticky;
+    display: flex;
+    top: 0;
+    height: 65px;
+    background-color:#484646 ;
+}
+.sticky-buttons {
+    display: flex;
+    justify-content: space-between; /* Distribute buttons evenly */
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px; /* Add padding to the container */
+    margin: 10px;
+    line-height: 30px;
+    width: fit-content; /* Fit content so buttons don't stretch */
 }
 
+.sticky-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px; /* Add padding to the buttons */
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.sticky-buttons button:hover {
+    background-color: #1F1F1F; /* Darken background on hover */
+}
 
+.sticky-buttons button:focus {
+    outline: none;
+    background-color: #1A1A1A; /* Even darker when focused */
+}
 
+.sticky-buttons .sticky-all-button,
+.sticky-buttons .sticky-music-button,
+.sticky-buttons .sticky-podcast-button {
+    margin-right: 10px; /* Add spacing between buttons */
+}
 
+.sticky-buttons button:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+}
+.cards-title{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+h2{
+    padding: 0px 30px;
+    height: 38px;
+    justify-items: center;
+    display: inline-block;
+    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+    margin: 15px;
+    margin-left: 30px;
+    
+
+    /* justify-content: space-evenly; */
+}
+.cards-music{
+    background-color: rgb(220, 20, 140);
+    justify-content: start;
+    width: 230px;
+    height: 130px;
+    margin-right: 20px;
+    border-radius: 10px;
+    position: relative; 
+}
+.cards-music img {
+    position: absolute;
+    left: 140px;
+    top: 40px; 
+    transform: rotate(25deg); /* Rotate the image */
+    height: 105px;
+    width: 105px;
+}
+.cards-podcast{
+    background-color: rgb(0, 100, 80);
+    width: 230px;
+    height: 130px;
+    margin-right: 20px;
+    border-radius: 10px;
+    position: relative; 
+}
+.cards-podcast img {
+    position: absolute;
+    left: 140px;
+    top: 40px; 
+    transform: rotate(25deg); /* Rotate the image */
+    height: 105px;
+    width: 105px;
+}
+.cards-event{
+    background-color: rgb(132, 0, 231);
+    width: 230px;
+    height: 130px;
+    margin-right: 20px;
+    border-radius: 10px;
+    position: relative; 
+
+}
+.cards-event img {
+    position: absolute;
+    left: 140px;
+    top: 40px; 
+    transform: rotate(25deg); /* Rotate the image */
+    height: 105px;
+    width: 105px;
+}
+h3{
+    font-size: 21px;
+    padding: 17px;
+}
+h5{
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.musicplayer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+    
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+    transition: height 0.3s ease, opacity 0.3s ease; 
+}
+
+.player-control-icon:hover {
+    opacity: 1; 
+}
+
+.player-control-icon:nth-child(3) { 
+    height: 1.9rem; 
+}
+
+.player-control-icon:nth-child(3):hover {
+    height: 2.1rem; 
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.progress-bar{
+    width: 50%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50px;
+    margin-top: -6px;
+    
+
+}
 
 
 

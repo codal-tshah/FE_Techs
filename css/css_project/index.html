@@ -33,7 +33,10 @@
                 </div>
                 
             </div>
-            <div class="profile">
+            <!-- <div class="nav-button">
+                Install App
+            </div> -->
+            <div class="profile">  
                 <i class="fa-regular fa-bell"></i>
                 <img src="./assests/20.jpeg" alt="pfp">
             </div>
@@ -55,17 +58,61 @@
                 <div class="podcast">Podcasts & Shows</div>
             </div>
         </div>
-        <div class="main-content">main-content</div>
-        <div class="musicplayer"> music Player</div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-buttons">
+                    <div class="sticky-all-button"><button>
+                        All
+                    </button></div>
+                    <div class="sticky-music-button"><button>
+                        Music
+                    </button></div>
+                    <div class="sticky-podcast-button"><button>
+                        Podcasts
+                    </button></div>
+                </div>
+            </div>
+            <div class="cards-title">
+                <h2>
+                    Start browsing
+                </h2>
+                <!-- <h5>
+                    Show all
+                </h5> -->
+            </div>
+            <div class="cards">
+                <div class="cards-music"><h3>Music</h3>
+                    <img src="./assests/tophits.jpg" alt="empty">
+                </div>
+                <div class="cards-podcast"><h3>Podcasts</h3>
+                    <img src="./assests/science.jpg" alt="empty">
+                </div>
+                <div class="cards-event"><h3>Live Events</h3>
+                    <img src="./assests/liveevent.jpg" alt="empty">
+                </div>
+            </div>
+            
+        </div>
+        <div class="musicplayer"> 
+            <div class="album"></div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assests/player_icon1.png" class="player-control-icon">
+                    <img src="./assests/player_icon2.png" class="player-control-icon">
+                    <img src="./assests/player_icon3.png" class="player-control-icon" style="opacity: 1;">
+                    <img src="./assests/player_icon4.png" class="player-control-icon">
+                    <img src="./assests/player_icon5.png" class="player-control-icon">
+        
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls"></div>
+        </div>
     </div>
 </body>
 
 </html>
-<div class="nav-option">
-    <i class="fa-solid fa-house"></i>
-    <a href="#">Home</a>
-</div>
-<div class="nav-option">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <a href="#">Search</a>
-</div>
