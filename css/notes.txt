@@ -40,3 +40,10 @@
 - CSS part 6 assignment solved 
 - solved 2 questions
 - watchout simple mini css project 
+
+1_oct :
+- started making Spotify clone
+
+3_oct:
+- completed spotify clone using HTML + CSS
+- started learning JS(java script)
