@@ -1,0 +1,5 @@
+16_oct 
+- completed the javascript learning of part 3 
+17-oct 
+- completed the javascript learning of part 4
+- learn the for loops and while loops also nested loops
