@@ -3,3 +3,7 @@
 17-oct 
 - completed the javascript learning of part 4
 - learn the for loops and while loops also nested loops
+21_oct
+- completed learning javascript part 5
+- learn some randome and maths functions and how to use it.
+- also learned the objects and arrays
